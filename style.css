@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root{
+  --clr-main:#96CEB4;
+}
+
+body {
+  background-color: var(--clr-main);
+  font-family: "Rubik", sans-serif;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 300px;
+  margin-inline: 5px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  all: unset;
+  padding: 10px;
+  padding-left: 0;
+  border-bottom: 1px solid var(--clr-main);
+}
+
+.search-box button {
+  all: unset;
+  padding: 10px;
+  background-color: var(--clr-main);
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.result .word {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result .word button {
+  all: unset;
+  color: var(--clr-main);
+  cursor: pointer;
+}
+
+.details {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.details p {
+  color: rgb(150, 150, 150);
+  margin-block: 15px;
+}
+
+.word-meaning,
+.word-example {
+  color: #464545;
+  font-style: italic;
+}
+
+.word-example {
+  padding-left: 10px;
+  border-left: 2px solid var(--clr-main);
+  margin-top: 15px;
+}
+
+.rej{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 568px) {
+  .container {
+    width: 500px;
+  }
+}
