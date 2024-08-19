@@ -36,6 +36,7 @@ body {
   padding: 10px;
   padding-left: 0;
   border-bottom: 1px solid var(--clr-main);
+  width: 50%;
 }
 
 .search-box button {
